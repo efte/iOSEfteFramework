@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9111714C19C1A61200FDF56C /* EFTELog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9111714B19C1A61200FDF56C /* EFTELog.m */; };
+		91D83E0F1998D57E00466976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D83E0E1998D57E00466976 /* Foundation.framework */; };
+		91D83E1D1998D57E00466976 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D83E1C1998D57E00466976 /* XCTest.framework */; };
+		91D83E1E1998D57E00466976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D83E0E1998D57E00466976 /* Foundation.framework */; };
+		91D83E201998D57E00466976 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D83E1F1998D57E00466976 /* UIKit.framework */; };
+		91D83E231998D57E00466976 /* libEfte.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D83E0B1998D57E00466976 /* libEfte.a */; };
+		91D83E291998D57E00466976 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91D83E271998D57E00466976 /* InfoPlist.strings */; };
+		91D83E2B1998D57E00466976 /* EfteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D83E2A1998D57E00466976 /* EfteTests.m */; };
+		91D83EA41998E60300466976 /* EFTEEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D83E3C1998E60200466976 /* EFTEEnvironment.m */; };
+		91D83EA61998E60300466976 /* EFTEPageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D83E401998E60200466976 /* EFTEPageManager.m */; };
+		91D83EA71998E60300466976 /* EFTEWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D83E421998E60200466976 /* EFTEWebView.m */; };
+		91D83EA81998E60300466976 /* EFTEWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D83E441998E60200466976 /* EFTEWebViewController.m */; };
+		91D83EBF1998E60300466976 /* UIViewController+EFTENavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D83E7C1998E60300466976 /* UIViewController+EFTENavigator.m */; };
+		91D83EC01998E60300466976 /* EFTEPackageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D83E7F1998E60300466976 /* EFTEPackageController.m */; };
+		91D83EC31998E60300466976 /* EFTEUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D83E871998E60300466976 /* EFTEUtil.m */; };
+		91D83EC41998E60300466976 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D83E891998E60300466976 /* NSData+Base64.m */; };
+		91D83EC51998E60300466976 /* NSDate+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D83E8B1998E60300466976 /* NSDate+Helpers.m */; };
+		91D83EC61998E60300466976 /* NSString+height.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D83E8D1998E60300466976 /* NSString+height.m */; };
+		91D83EC71998E60300466976 /* NSURL+PathExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D83E8F1998E60300466976 /* NSURL+PathExt.m */; };
+		91D83ECE1998E60300466976 /* EFTEVersionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D83E9D1998E60300466976 /* EFTEVersionUtils.m */; };
+		91D83EF41998EA1200466976 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D83EF31998EA1200466976 /* NSString+Utils.m */; };
+		A33E4A25C9B5480C9F392FC4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD2BC238AC5474AA56C8D63 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91D83E211998D57E00466976 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91D83E031998D57E00466976 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91D83E0A1998D57E00466976;
+			remoteInfo = Efte;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		91D83E091998D57E00466976 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4FD2BC238AC5474AA56C8D63 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9111714A19C1A61200FDF56C /* EFTELog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTELog.h; sourceTree = "<group>"; };
+		9111714B19C1A61200FDF56C /* EFTELog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTELog.m; sourceTree = "<group>"; };
+		91D83E0B1998D57E00466976 /* libEfte.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEfte.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		91D83E0E1998D57E00466976 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		91D83E121998D57E00466976 /* Efte-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Efte-Prefix.pch"; sourceTree = "<group>"; };
+		91D83E1B1998D57E00466976 /* EfteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EfteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91D83E1C1998D57E00466976 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		91D83E1F1998D57E00466976 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		91D83E261998D57E00466976 /* EfteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EfteTests-Info.plist"; sourceTree = "<group>"; };
+		91D83E281998D57E00466976 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		91D83E2A1998D57E00466976 /* EfteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EfteTests.m; sourceTree = "<group>"; };
+		91D83E3A1998E60200466976 /* EFTEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTEDefines.h; sourceTree = "<group>"; };
+		91D83E3B1998E60200466976 /* EFTEEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTEEnvironment.h; sourceTree = "<group>"; };
+		91D83E3C1998E60200466976 /* EFTEEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTEEnvironment.m; sourceTree = "<group>"; };
+		91D83E3F1998E60200466976 /* EFTEPageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTEPageManager.h; sourceTree = "<group>"; };
+		91D83E401998E60200466976 /* EFTEPageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTEPageManager.m; sourceTree = "<group>"; };
+		91D83E411998E60200466976 /* EFTEWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTEWebView.h; sourceTree = "<group>"; };
+		91D83E421998E60200466976 /* EFTEWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTEWebView.m; sourceTree = "<group>"; };
+		91D83E431998E60200466976 /* EFTEWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTEWebViewController.h; sourceTree = "<group>"; };
+		91D83E441998E60200466976 /* EFTEWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTEWebViewController.m; sourceTree = "<group>"; };
+		91D83E7B1998E60200466976 /* UIViewController+EFTENavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+EFTENavigator.h"; sourceTree = "<group>"; };
+		91D83E7C1998E60300466976 /* UIViewController+EFTENavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+EFTENavigator.m"; sourceTree = "<group>"; };
+		91D83E7E1998E60300466976 /* EFTEPackageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTEPackageController.h; sourceTree = "<group>"; };
+		91D83E7F1998E60300466976 /* EFTEPackageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTEPackageController.m; sourceTree = "<group>"; };
+		91D83E861998E60300466976 /* EFTEUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTEUtil.h; sourceTree = "<group>"; };
+		91D83E871998E60300466976 /* EFTEUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTEUtil.m; sourceTree = "<group>"; };
+		91D83E881998E60300466976 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		91D83E891998E60300466976 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		91D83E8A1998E60300466976 /* NSDate+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helpers.h"; sourceTree = "<group>"; };
+		91D83E8B1998E60300466976 /* NSDate+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helpers.m"; sourceTree = "<group>"; };
+		91D83E8C1998E60300466976 /* NSString+height.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+height.h"; sourceTree = "<group>"; };
+		91D83E8D1998E60300466976 /* NSString+height.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+height.m"; sourceTree = "<group>"; };
+		91D83E8E1998E60300466976 /* NSURL+PathExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+PathExt.h"; sourceTree = "<group>"; };
+		91D83E8F1998E60300466976 /* NSURL+PathExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+PathExt.m"; sourceTree = "<group>"; };
+		91D83E9C1998E60300466976 /* EFTEVersionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTEVersionUtils.h; sourceTree = "<group>"; };
+		91D83E9D1998E60300466976 /* EFTEVersionUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTEVersionUtils.m; sourceTree = "<group>"; };
+		91D83ED11998E62700466976 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		91D83EF21998EA1200466976 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		91D83EF31998EA1200466976 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		91D83F97199CDE6700466976 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F91D69A251FA44C2860AE9D8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91D83E081998D57E00466976 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D83E0F1998D57E00466976 /* Foundation.framework in Frameworks */,
+				A33E4A25C9B5480C9F392FC4 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91D83E181998D57E00466976 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D83E1D1998D57E00466976 /* XCTest.framework in Frameworks */,
+				91D83E201998D57E00466976 /* UIKit.framework in Frameworks */,
+				91D83E1E1998D57E00466976 /* Foundation.framework in Frameworks */,
+				91D83E231998D57E00466976 /* libEfte.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91D83E021998D57E00466976 = {
+			isa = PBXGroup;
+			children = (
+				91D83E101998D57E00466976 /* Efte */,
+				91D83E241998D57E00466976 /* EfteTests */,
+				91D83E0D1998D57E00466976 /* Frameworks */,
+				91D83E0C1998D57E00466976 /* Products */,
+				F91D69A251FA44C2860AE9D8 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		91D83E0C1998D57E00466976 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91D83E0B1998D57E00466976 /* libEfte.a */,
+				91D83E1B1998D57E00466976 /* EfteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91D83E0D1998D57E00466976 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91D83E0E1998D57E00466976 /* Foundation.framework */,
+				91D83E1C1998D57E00466976 /* XCTest.framework */,
+				91D83E1F1998D57E00466976 /* UIKit.framework */,
+				4FD2BC238AC5474AA56C8D63 /* libPods.a */,
+				91D83F97199CDE6700466976 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91D83E101998D57E00466976 /* Efte */ = {
+			isa = PBXGroup;
+			children = (
+				91D83E3A1998E60200466976 /* EFTEDefines.h */,
+				91D83E3B1998E60200466976 /* EFTEEnvironment.h */,
+				91D83E3C1998E60200466976 /* EFTEEnvironment.m */,
+				91D83E3F1998E60200466976 /* EFTEPageManager.h */,
+				91D83E401998E60200466976 /* EFTEPageManager.m */,
+				91D83E411998E60200466976 /* EFTEWebView.h */,
+				91D83E421998E60200466976 /* EFTEWebView.m */,
+				91D83E431998E60200466976 /* EFTEWebViewController.h */,
+				91D83E441998E60200466976 /* EFTEWebViewController.m */,
+				91D83E791998E60200466976 /* navigator */,
+				91D83E7D1998E60300466976 /* packagemanager */,
+				91D83E831998E60300466976 /* utils */,
+				91D83E111998D57E00466976 /* Supporting Files */,
+			);
+			path = Efte;
+			sourceTree = "<group>";
+		};
+		91D83E111998D57E00466976 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91D83E121998D57E00466976 /* Efte-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91D83E241998D57E00466976 /* EfteTests */ = {
+			isa = PBXGroup;
+			children = (
+				91D83E2A1998D57E00466976 /* EfteTests.m */,
+				91D83E251998D57E00466976 /* Supporting Files */,
+			);
+			path = EfteTests;
+			sourceTree = "<group>";
+		};
+		91D83E251998D57E00466976 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91D83E261998D57E00466976 /* EfteTests-Info.plist */,
+				91D83E271998D57E00466976 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91D83E791998E60200466976 /* navigator */ = {
+			isa = PBXGroup;
+			children = (
+				91D83E7B1998E60200466976 /* UIViewController+EFTENavigator.h */,
+				91D83E7C1998E60300466976 /* UIViewController+EFTENavigator.m */,
+			);
+			path = navigator;
+			sourceTree = "<group>";
+		};
+		91D83E7D1998E60300466976 /* packagemanager */ = {
+			isa = PBXGroup;
+			children = (
+				91D83E7E1998E60300466976 /* EFTEPackageController.h */,
+				91D83E7F1998E60300466976 /* EFTEPackageController.m */,
+			);
+			path = packagemanager;
+			sourceTree = "<group>";
+		};
+		91D83E831998E60300466976 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				91D83E861998E60300466976 /* EFTEUtil.h */,
+				91D83E871998E60300466976 /* EFTEUtil.m */,
+				91D83E881998E60300466976 /* NSData+Base64.h */,
+				91D83E891998E60300466976 /* NSData+Base64.m */,
+				91D83E8A1998E60300466976 /* NSDate+Helpers.h */,
+				91D83E8B1998E60300466976 /* NSDate+Helpers.m */,
+				91D83E8C1998E60300466976 /* NSString+height.h */,
+				91D83E8D1998E60300466976 /* NSString+height.m */,
+				91D83E8E1998E60300466976 /* NSURL+PathExt.h */,
+				91D83E8F1998E60300466976 /* NSURL+PathExt.m */,
+				91D83E9C1998E60300466976 /* EFTEVersionUtils.h */,
+				91D83E9D1998E60300466976 /* EFTEVersionUtils.m */,
+				91D83EF21998EA1200466976 /* NSString+Utils.h */,
+				91D83EF31998EA1200466976 /* NSString+Utils.m */,
+				9111714A19C1A61200FDF56C /* EFTELog.h */,
+				9111714B19C1A61200FDF56C /* EFTELog.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91D83E0A1998D57E00466976 /* Efte */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91D83E2E1998D57E00466976 /* Build configuration list for PBXNativeTarget "Efte" */;
+			buildPhases = (
+				B2022FCE7A7F490B822D7E53 /* Check Pods Manifest.lock */,
+				91D83E071998D57E00466976 /* Sources */,
+				91D83E081998D57E00466976 /* Frameworks */,
+				91D83E091998D57E00466976 /* CopyFiles */,
+				25713D68303748978754A974 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Efte;
+			productName = Efte;
+			productReference = 91D83E0B1998D57E00466976 /* libEfte.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		91D83E1A1998D57E00466976 /* EfteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91D83E311998D57E00466976 /* Build configuration list for PBXNativeTarget "EfteTests" */;
+			buildPhases = (
+				91D83E171998D57E00466976 /* Sources */,
+				91D83E181998D57E00466976 /* Frameworks */,
+				91D83E191998D57E00466976 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91D83E221998D57E00466976 /* PBXTargetDependency */,
+			);
+			name = EfteTests;
+			productName = EfteTests;
+			productReference = 91D83E1B1998D57E00466976 /* EfteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91D83E031998D57E00466976 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Dianping;
+			};
+			buildConfigurationList = 91D83E061998D57E00466976 /* Build configuration list for PBXProject "Efte" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = 91D83E021998D57E00466976;
+			productRefGroup = 91D83E0C1998D57E00466976 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91D83E0A1998D57E00466976 /* Efte */,
+				91D83E1A1998D57E00466976 /* EfteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91D83E191998D57E00466976 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D83E291998D57E00466976 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25713D68303748978754A974 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2022FCE7A7F490B822D7E53 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91D83E071998D57E00466976 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D83EF41998EA1200466976 /* NSString+Utils.m in Sources */,
+				91D83EBF1998E60300466976 /* UIViewController+EFTENavigator.m in Sources */,
+				91D83EC31998E60300466976 /* EFTEUtil.m in Sources */,
+				91D83EA81998E60300466976 /* EFTEWebViewController.m in Sources */,
+				91D83EC51998E60300466976 /* NSDate+Helpers.m in Sources */,
+				91D83EA61998E60300466976 /* EFTEPageManager.m in Sources */,
+				91D83EC41998E60300466976 /* NSData+Base64.m in Sources */,
+				91D83EC61998E60300466976 /* NSString+height.m in Sources */,
+				91D83ECE1998E60300466976 /* EFTEVersionUtils.m in Sources */,
+				91D83EC71998E60300466976 /* NSURL+PathExt.m in Sources */,
+				9111714C19C1A61200FDF56C /* EFTELog.m in Sources */,
+				91D83EC01998E60300466976 /* EFTEPackageController.m in Sources */,
+				91D83EA41998E60300466976 /* EFTEEnvironment.m in Sources */,
+				91D83EA71998E60300466976 /* EFTEWebView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91D83E171998D57E00466976 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D83E2B1998D57E00466976 /* EfteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91D83E221998D57E00466976 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91D83E0A1998D57E00466976 /* Efte */;
+			targetProxy = 91D83E211998D57E00466976 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		91D83E271998D57E00466976 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91D83E281998D57E00466976 /* en */,
+				91D83ED11998E62700466976 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91D83E2C1998D57E00466976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		91D83E2D1998D57E00466976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91D83E2F1998D57E00466976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F91D69A251FA44C2860AE9D8 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/Efte.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Efte/Efte-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		91D83E301998D57E00466976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F91D69A251FA44C2860AE9D8 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/Efte.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Efte/Efte-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		91D83E321998D57E00466976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Efte/Efte-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EfteTests/EfteTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Efte/GA",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		91D83E331998D57E00466976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Efte/Efte-Prefix.pch";
+				INFOPLIST_FILE = "EfteTests/EfteTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Efte/GA",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91D83E061998D57E00466976 /* Build configuration list for PBXProject "Efte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91D83E2C1998D57E00466976 /* Debug */,
+				91D83E2D1998D57E00466976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91D83E2E1998D57E00466976 /* Build configuration list for PBXNativeTarget "Efte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91D83E2F1998D57E00466976 /* Debug */,
+				91D83E301998D57E00466976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91D83E311998D57E00466976 /* Build configuration list for PBXNativeTarget "EfteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91D83E321998D57E00466976 /* Debug */,
+				91D83E331998D57E00466976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91D83E031998D57E00466976 /* Project object */;
+}

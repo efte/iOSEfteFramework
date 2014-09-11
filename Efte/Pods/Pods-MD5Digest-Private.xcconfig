@@ -1,0 +1,5 @@
+#include "Pods-MD5Digest.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/MD5Digest" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/MD5Digest" "${PODS_ROOT}/Headers/ZipArchive"
+OTHER_LDFLAGS = -ObjC
+PODS_ROOT = ${SRCROOT}

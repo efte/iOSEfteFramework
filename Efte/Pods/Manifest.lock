@@ -1,0 +1,16 @@
+PODS:
+  - AFNetworking (1.3.4)
+  - MD5Digest (0.1.0)
+  - ZipArchive (1.2.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 1.3.4)
+  - MD5Digest
+  - ZipArchive (~> 1.2.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: 80c4e0652b08eb34e25b9c0ff3c82556fe5967b4
+  MD5Digest: 058b7162b1fc8c30feddf10bfe66e0565797c45f
+  ZipArchive: 1753357f3081f87ab5776d4c4ff25f7ddefd2fd1
+
+COCOAPODS: 0.33.1

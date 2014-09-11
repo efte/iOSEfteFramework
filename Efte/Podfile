@@ -1,0 +1,15 @@
+platform :ios, '5.1'
+pod "AFNetworking", "~> 1.3.4"
+pod 'MD5Digest'
+pod 'ZipArchive', '~> 1.2.0'
+
+post_install do |installer_representation|
+    installer_representation.project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['ARCHS'] = 'armv7 armv7s'
+        end
+    end
+end
+
+
+
