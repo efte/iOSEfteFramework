@@ -50,7 +50,7 @@ NSString *EFTEInternalGetLogPath() {
 }
 
 
-FILE *__log_file() {
+FILE *__efte_log_file() {
     static FILE *pfile = nil;
     if(!pfile) {
         NSString *path = EFTEInternalGetLogPath();
@@ -92,7 +92,7 @@ void __EFTELog(NSString *file, NSInteger line, NSString * content) {
     const char *buf = [str cStringUsingEncoding:NSUTF8StringEncoding];
     printf("%s", buf);
     
-    FILE *fp = __log_file();
+    FILE *fp = __efte_log_file();
     if(fp) {
         fputs(buf, fp);
         fflush(fp);
