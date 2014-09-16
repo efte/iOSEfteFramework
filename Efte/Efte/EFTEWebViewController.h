@@ -11,16 +11,23 @@
 #import "UIViewController+EFTENavigator.h"
 
 
-@interface EFTEWebViewController : UIViewController <UIWebViewDelegate>
-{
-    NSMutableDictionary *_data;
-}
+@protocol EFTEWebViewController <NSObject>
 
 @property (strong, nonatomic) UIView *networkInfoView;
 @property (strong, nonatomic) UIWebView *webView;
 @property (strong, nonatomic) NSString *unit;
 @property (strong, nonatomic) NSString *path;
 @property (strong, nonatomic) NSString *url;
+
+@end
+
+
+
+@interface EFTEWebViewController : UIViewController <UIWebViewDelegate, EFTEWebViewController>
+{
+    NSMutableDictionary *_data;
+}
+
 @property (readonly, nonatomic) BOOL efteJSLoaded;
 
 - (void)jsCallbackForId:(NSString *) callbackId withRetValue:(id) ret;

@@ -9,6 +9,7 @@
 #import "EFTEEnvironment.h"
 #include <sys/types.h>
 #include <sys/sysctl.h>
+#import "EFTEWebViewController.h"
 
 static EFTEEnvironment *__env = nil;
 
@@ -82,6 +83,10 @@ void EFTEInternalSetDefaultEnvironment(EFTEEnvironment *env) {
 
 - (Class)navigationControllerClass {
     return [UINavigationController class];
+}
+
+- (Class)EFTEWebViewControllerClass {
+    return [EFTEWebViewController class];
 }
 
 @end

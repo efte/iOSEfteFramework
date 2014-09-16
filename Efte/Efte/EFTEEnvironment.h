@@ -44,6 +44,12 @@
 
 - (Class)navigationControllerClass;
 
+/**
+ The class of EFTEWebViewController
+ must confirm EFTEWebViewController protocal
+ */
+- (Class)EFTEWebViewControllerClass;
+
 @end
 
 
@@ -53,3 +59,7 @@
 #define ISDEBUG [[EFTEEnvironment defaultEnvironment] isDebug]
 
 void EFTEInternalSetDefaultEnvironment(EFTEEnvironment *env);
+
+
+
+

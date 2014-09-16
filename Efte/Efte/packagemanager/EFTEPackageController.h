@@ -9,16 +9,6 @@
 #import <Foundation/Foundation.h>
 
 /**
- app name
- */
-#define kEFTEAppName    @"apollo"
-
-/**
- default download url
- */
-#define kEFTEDefaultDownloadURL @"http://efte.dianping.com/api/app/apollo/checkupdate"
-
-/**
  package download & patch finished notification
  */
 #define kEFTEPackageUpdateFinishedNotification  @"EFTEPackageUpdateFinished"
@@ -46,6 +36,7 @@ typedef void (^EFTEBlock)(void);
 
 @property (nonatomic, weak) id <EFTEPackageDelegate> delegate;
 @property (nonatomic, readonly) BOOL isUpdating;
+@property (nonatomic, strong) NSString *appName;
 
 + (instancetype)sharedInstance;
 
@@ -55,7 +46,12 @@ typedef void (^EFTEBlock)(void);
 // for impliment
 - (NSDictionary *)deviceInfo;
 
+// force
+- (void)updatePackages:(BOOL)force;
+
 @end
+
+
 
 @protocol EFTEPackageDelegate <NSObject>
 

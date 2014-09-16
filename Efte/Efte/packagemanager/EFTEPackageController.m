@@ -14,8 +14,6 @@
 #import "EFTEEnvironment.h"
 #import "EFTEDefines.h"
 
-#define kUserDefaultsPackageManagerUrlKey @"packagemanagerurl"
-
 static EFTEPackageController *gNVHybridController = nil;
 
 void EFTEInternalSetDefaultPackageController(EFTEPackageController *pkgController) {
@@ -50,13 +48,6 @@ void EFTEInternalSetDefaultPackageController(EFTEPackageController *pkgControlle
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillEnterForeground) name:UIApplicationWillEnterForegroundNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackground) name:UIApplicationDidEnterBackgroundNotification object:nil];
         
-        NSString *savedUrl = [[NSUserDefaults standardUserDefaults] objectForKey:kUserDefaultsPackageManagerUrlKey];
-        if (savedUrl.length<1) {
-            _url = kEFTEDefaultDownloadURL;
-        } else {
-            _url = savedUrl;
-        }
-        
         _queue = dispatch_queue_create("com.efte.packagedownloader", 0);
         
         NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
@@ -69,8 +60,6 @@ void EFTEInternalSetDefaultPackageController(EFTEPackageController *pkgControlle
         _docPkgsPath = [_docPath stringByAppendingPathComponent:@"packages"];
         _configPlistPath = [_docPath stringByAppendingPathComponent:@"config"];
         [self loadConfig];
-        
-        [self checkPackages];
     }
     return self;
 }
@@ -105,8 +94,6 @@ void EFTEInternalSetDefaultPackageController(EFTEPackageController *pkgControlle
         return NO;
     }
     _url = urlString;
-    [[NSUserDefaults standardUserDefaults] setObject:urlString forKey:kUserDefaultsPackageManagerUrlKey];
-    [self checkPackages];
     return YES;
 }
 
@@ -124,6 +111,27 @@ void EFTEInternalSetDefaultPackageController(EFTEPackageController *pkgControlle
 #define CHECKCANCEL {if([self isCanceled]) return;}
 
 - (void)checkPackages {
+    [self updatePackages:NO];
+}
+
+- (void)updatePackages:(BOOL)force {
+    if (_url.length<1) {
+        EFTELOG(@"ERROR!! Please call function setPackageDownloadURL: first");
+        return;
+    }
+    
+    if (_appName.length<1) {
+        EFTELOG(@"ERROR!! Please call function setAppName: first");
+        return;
+    }
+    
+    if (force) {
+        _canceled = YES;
+    } else {
+        if (self.atomicTaskCount>0) {
+            return;
+        }
+    }
     
     dispatch_async(_queue, ^{
         self.atomicTaskCount++;
@@ -215,6 +223,9 @@ done:
 
 - (BOOL)unpackLocalPackages {
     NSString *localPackagePath = [[EFTEEnvironment defaultEnvironment] localPackageZipPath];
+    if (localPackagePath.length<1) {
+        return YES;
+    }
     ZipArchive *zipArchive = [[ZipArchive alloc] init];
     if(![zipArchive UnzipOpenFile:localPackagePath]) {
         EFTELOG(@"unzip fail: open local zip failed");
@@ -344,7 +355,7 @@ done:
     NSData *responseData = nil;
     {
         NSMutableDictionary *postDic = [NSMutableDictionary dictionary];
-        [postDic setObject:kEFTEAppName forKey:@"appName"];
+        [postDic setObject:self.appName forKey:@"appName"];
         [postDic setObject:packageInfoDic forKey:@"packages"];
         [postDic setObject:[self deviceInfo] forKey:@"deviceInfo"];
         EFTELOG(@"hybrid post body:\n%@", postDic);

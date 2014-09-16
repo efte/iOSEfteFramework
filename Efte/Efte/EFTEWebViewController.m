@@ -32,6 +32,12 @@
     BOOL _needReload;
 }
 
+@synthesize networkInfoView = _networkInfoView;
+@synthesize webView = _webView;
+@synthesize unit = _unit;
+@synthesize path = _path;
+@synthesize url = _url;
+
 + (void)initialize {
     NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:[self userAgent], @"UserAgent", nil];
     [[NSUserDefaults standardUserDefaults] registerDefaults:dictionary];
