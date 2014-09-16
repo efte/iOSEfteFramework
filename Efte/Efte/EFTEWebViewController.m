@@ -185,6 +185,9 @@
         [self webViewRestore];
         _viewHadUnload = NO;
     }
+    
+    NSString *title = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+    self.navigationItem.title = title;
 }
 
 - (void)handleMessage:(NSDictionary *)param
