@@ -13,7 +13,6 @@
 
 @protocol EFTEWebViewController <NSObject>
 
-@property (strong, nonatomic) UIView *networkInfoView;
 @property (strong, nonatomic) UIWebView *webView;
 @property (strong, nonatomic) NSString *unit;
 @property (strong, nonatomic) NSString *path;

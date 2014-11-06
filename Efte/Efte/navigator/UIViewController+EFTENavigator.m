@@ -81,7 +81,7 @@ static const char *efteQueryTag = "efteQueryTag";
 
 - (void)efteOpenUrl:(NSString *)url withQuery:(NSDictionary *)query animated:(BOOL)animated modal:(BOOL)modal
 {
-    EFTEWebViewController *vc = [EFTEWebViewController new];
+    EFTEWebViewController *vc = [[[EFTEEnvironment defaultEnvironment] EFTEWebViewControllerClass] new];
     vc.url = url;
     vc.efteQuery = query;
     if (modal) {
@@ -98,7 +98,7 @@ static const char *efteQueryTag = "efteQueryTag";
 - (UIViewController *)viewControllerForUnit:(NSString *)unit path:(NSString *)path
 {
     // efte webviewcontroller
-    EFTEWebViewController *vc = [EFTEWebViewController new];
+    EFTEWebViewController *vc = [[[EFTEEnvironment defaultEnvironment] EFTEWebViewControllerClass] new];
     vc.unit = unit;
     vc.path = path;
     return vc;

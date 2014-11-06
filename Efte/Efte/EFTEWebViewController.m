@@ -32,7 +32,6 @@
     BOOL _needReload;
 }
 
-@synthesize networkInfoView = _networkInfoView;
 @synthesize webView = _webView;
 @synthesize unit = _unit;
 @synthesize path = _path;
